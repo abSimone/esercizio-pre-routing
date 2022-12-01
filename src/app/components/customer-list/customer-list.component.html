@@ -1,0 +1,10 @@
+<div class="container">
+  <div *ngFor="let c of customerList; let i = index" class="row">
+    <div class="col">
+      {{c.email}}
+    </div>
+    <div class="col">
+      <button class="btn btn-dark" (click)="openDetail(i)">Detail</button>
+    </div>
+  </div>
+</div>
